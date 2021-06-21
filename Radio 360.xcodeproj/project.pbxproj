@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B481DA726814A6700179414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DA626814A6700179414 /* AppDelegate.swift */; };
+		1B481DAB26814A6700179414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DAA26814A6700179414 /* ViewController.swift */; };
+		1B481DAE26814A6700179414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DAC26814A6700179414 /* Main.storyboard */; };
+		1B481DB026814A6900179414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DAF26814A6900179414 /* Assets.xcassets */; };
+		1B481DB326814A6900179414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DB126814A6900179414 /* LaunchScreen.storyboard */; };
+		1BFC42DF26814BC300A98E2A /* AnimationFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42B926814BC200A98E2A /* AnimationFrames.swift */; };
+		1BFC42E026814BC300A98E2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BA26814BC200A98E2A /* Constants.swift */; };
+		1BFC42E126814BC300A98E2A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BD26814BC200A98E2A /* Reachability.swift */; };
+		1BFC42E226814BC300A98E2A /* FRadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BE26814BC200A98E2A /* FRadioAPI.swift */; };
+		1BFC42E326814BC300A98E2A /* FRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BF26814BC200A98E2A /* FRadioPlayer.swift */; };
+		1BFC42E426814BC300A98E2A /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C126814BC200A98E2A /* DesignableImageView.swift */; };
+		1BFC42E526814BC300A98E2A /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C226814BC200A98E2A /* KeyboardLayoutConstraint.swift */; };
+		1BFC42E626814BC300A98E2A /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C326814BC200A98E2A /* TransitionManager.swift */; };
+		1BFC42E726814BC300A98E2A /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C426814BC200A98E2A /* TransitionZoom.swift */; };
+		1BFC42E826814BC300A98E2A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C526814BC200A98E2A /* ImageLoader.swift */; };
+		1BFC42E926814BC300A98E2A /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C626814BC200A98E2A /* Spring.swift */; };
+		1BFC42EA26814BC300A98E2A /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C726814BC200A98E2A /* SpringImageView.swift */; };
+		1BFC42EB26814BC300A98E2A /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C826814BC200A98E2A /* DesignableLabel.swift */; };
+		1BFC42EC26814BC300A98E2A /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42C926814BC200A98E2A /* SoundPlayer.swift */; };
+		1BFC42ED26814BC300A98E2A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CA26814BC200A98E2A /* BlurView.swift */; };
+		1BFC42EE26814BC300A98E2A /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CB26814BC200A98E2A /* DesignableTextField.swift */; };
+		1BFC42EF26814BC300A98E2A /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CC26814BC200A98E2A /* SpringButton.swift */; };
+		1BFC42F026814BC300A98E2A /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CD26814BC200A98E2A /* SpringTextView.swift */; };
+		1BFC42F126814BC300A98E2A /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CE26814BC200A98E2A /* Misc.swift */; };
+		1BFC42F226814BC300A98E2A /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42CF26814BC200A98E2A /* SpringView.swift */; };
+		1BFC42F326814BC300A98E2A /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D026814BC200A98E2A /* DesignableButton.swift */; };
+		1BFC42F426814BC300A98E2A /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D126814BC200A98E2A /* SpringTextField.swift */; };
+		1BFC42F526814BC300A98E2A /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D226814BC200A98E2A /* DesignableView.swift */; };
+		1BFC42F626814BC300A98E2A /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D326814BC200A98E2A /* DesignableTabBarController.swift */; };
+		1BFC42F726814BC300A98E2A /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D426814BC300A98E2A /* AsyncButton.swift */; };
+		1BFC42F826814BC300A98E2A /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFC42D526814BC300A98E2A /* LoadingView.xib */; };
+		1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D626814BC300A98E2A /* SpringLabel.swift */; };
+		1BFC42FA26814BC300A98E2A /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D826814BC300A98E2A /* DesignableTextView.swift */; };
+		1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42D926814BC300A98E2A /* AutoTextView.swift */; };
+		1BFC42FC26814BC300A98E2A /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DA26814BC300A98E2A /* SpringAnimation.swift */; };
+		1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DB26814BC300A98E2A /* UnwindSegue.swift */; };
+		1BFC42FE26814BC300A98E2A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DC26814BC300A98E2A /* LoadingView.swift */; };
+		1BFC430026814BC300A98E2A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DE26814BC300A98E2A /* AsyncImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B481DA326814A6700179414 /* Radio 360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio 360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B481DA626814A6700179414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B481DAA26814A6700179414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B481DAD26814A6700179414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B481DAF26814A6900179414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B481DB226814A6900179414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B481DB426814A6900179414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFC42B926814BC200A98E2A /* AnimationFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFrames.swift; sourceTree = "<group>"; };
+		1BFC42BA26814BC200A98E2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1BFC42BD26814BC200A98E2A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1BFC42BE26814BC200A98E2A /* FRadioAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioAPI.swift; sourceTree = "<group>"; };
+		1BFC42BF26814BC200A98E2A /* FRadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioPlayer.swift; sourceTree = "<group>"; };
+		1BFC42C126814BC200A98E2A /* DesignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		1BFC42C226814BC200A98E2A /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		1BFC42C326814BC200A98E2A /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		1BFC42C426814BC200A98E2A /* TransitionZoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionZoom.swift; sourceTree = "<group>"; };
+		1BFC42C526814BC200A98E2A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		1BFC42C626814BC200A98E2A /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		1BFC42C726814BC200A98E2A /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		1BFC42C826814BC200A98E2A /* DesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		1BFC42C926814BC200A98E2A /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		1BFC42CA26814BC200A98E2A /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		1BFC42CB26814BC200A98E2A /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		1BFC42CC26814BC200A98E2A /* SpringButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringButton.swift; sourceTree = "<group>"; };
+		1BFC42CD26814BC200A98E2A /* SpringTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextView.swift; sourceTree = "<group>"; };
+		1BFC42CE26814BC200A98E2A /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		1BFC42CF26814BC200A98E2A /* SpringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringView.swift; sourceTree = "<group>"; };
+		1BFC42D026814BC200A98E2A /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		1BFC42D126814BC200A98E2A /* SpringTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringTextField.swift; sourceTree = "<group>"; };
+		1BFC42D226814BC200A98E2A /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		1BFC42D326814BC200A98E2A /* DesignableTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTabBarController.swift; sourceTree = "<group>"; };
+		1BFC42D426814BC300A98E2A /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
+		1BFC42D526814BC300A98E2A /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		1BFC42D626814BC300A98E2A /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		1BFC42D726814BC300A98E2A /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		1BFC42D826814BC300A98E2A /* DesignableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		1BFC42D926814BC300A98E2A /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
+		1BFC42DA26814BC300A98E2A /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		1BFC42DB26814BC300A98E2A /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
+		1BFC42DC26814BC300A98E2A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1BFC42DD26814BC300A98E2A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BFC42DE26814BC300A98E2A /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B481DA026814A6700179414 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B481D9A26814A6700179414 = {
+			isa = PBXGroup;
+			children = (
+				1B481DA526814A6700179414 /* Radio 360 */,
+				1B481DA426814A6700179414 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B481DA426814A6700179414 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B481DA326814A6700179414 /* Radio 360.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B481DA526814A6700179414 /* Radio 360 */ = {
+			isa = PBXGroup;
+			children = (
+				1B481DA626814A6700179414 /* AppDelegate.swift */,
+				1B481DAA26814A6700179414 /* ViewController.swift */,
+				1B481DAC26814A6700179414 /* Main.storyboard */,
+				1B481DAF26814A6900179414 /* Assets.xcassets */,
+				1B481DB126814A6900179414 /* LaunchScreen.storyboard */,
+				1BFC42BA26814BC200A98E2A /* Constants.swift */,
+				1BFC42BB26814BC200A98E2A /* Libraries */,
+				1BFC42B826814BC200A98E2A /* UI Helpers */,
+				1B481DB426814A6900179414 /* Info.plist */,
+			);
+			path = "Radio 360";
+			sourceTree = "<group>";
+		};
+		1BFC42B826814BC200A98E2A /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC42B926814BC200A98E2A /* AnimationFrames.swift */,
+			);
+			path = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		1BFC42BB26814BC200A98E2A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC42BC26814BC200A98E2A /* FRadioPlayer */,
+				1BFC42C026814BC200A98E2A /* Spring */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		1BFC42BC26814BC200A98E2A /* FRadioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC42BD26814BC200A98E2A /* Reachability.swift */,
+				1BFC42BE26814BC200A98E2A /* FRadioAPI.swift */,
+				1BFC42BF26814BC200A98E2A /* FRadioPlayer.swift */,
+			);
+			path = FRadioPlayer;
+			sourceTree = "<group>";
+		};
+		1BFC42C026814BC200A98E2A /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				1BFC42C126814BC200A98E2A /* DesignableImageView.swift */,
+				1BFC42C226814BC200A98E2A /* KeyboardLayoutConstraint.swift */,
+				1BFC42C326814BC200A98E2A /* TransitionManager.swift */,
+				1BFC42C426814BC200A98E2A /* TransitionZoom.swift */,
+				1BFC42C526814BC200A98E2A /* ImageLoader.swift */,
+				1BFC42C626814BC200A98E2A /* Spring.swift */,
+				1BFC42C726814BC200A98E2A /* SpringImageView.swift */,
+				1BFC42C826814BC200A98E2A /* DesignableLabel.swift */,
+				1BFC42C926814BC200A98E2A /* SoundPlayer.swift */,
+				1BFC42CA26814BC200A98E2A /* BlurView.swift */,
+				1BFC42CB26814BC200A98E2A /* DesignableTextField.swift */,
+				1BFC42CC26814BC200A98E2A /* SpringButton.swift */,
+				1BFC42CD26814BC200A98E2A /* SpringTextView.swift */,
+				1BFC42CE26814BC200A98E2A /* Misc.swift */,
+				1BFC42CF26814BC200A98E2A /* SpringView.swift */,
+				1BFC42D026814BC200A98E2A /* DesignableButton.swift */,
+				1BFC42D126814BC200A98E2A /* SpringTextField.swift */,
+				1BFC42D226814BC200A98E2A /* DesignableView.swift */,
+				1BFC42D326814BC200A98E2A /* DesignableTabBarController.swift */,
+				1BFC42D426814BC300A98E2A /* AsyncButton.swift */,
+				1BFC42D526814BC300A98E2A /* LoadingView.xib */,
+				1BFC42D626814BC300A98E2A /* SpringLabel.swift */,
+				1BFC42D726814BC300A98E2A /* Spring.h */,
+				1BFC42D826814BC300A98E2A /* DesignableTextView.swift */,
+				1BFC42D926814BC300A98E2A /* AutoTextView.swift */,
+				1BFC42DA26814BC300A98E2A /* SpringAnimation.swift */,
+				1BFC42DB26814BC300A98E2A /* UnwindSegue.swift */,
+				1BFC42DC26814BC300A98E2A /* LoadingView.swift */,
+				1BFC42DD26814BC300A98E2A /* Info.plist */,
+				1BFC42DE26814BC300A98E2A /* AsyncImageView.swift */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B481DA226814A6700179414 /* Radio 360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B481DB726814A6900179414 /* Build configuration list for PBXNativeTarget "Radio 360" */;
+			buildPhases = (
+				1B481D9F26814A6700179414 /* Sources */,
+				1B481DA026814A6700179414 /* Frameworks */,
+				1B481DA126814A6700179414 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Radio 360";
+			productName = "Radio 360";
+			productReference = 1B481DA326814A6700179414 /* Radio 360.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B481D9B26814A6700179414 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					1B481DA226814A6700179414 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 1B481D9E26814A6700179414 /* Build configuration list for PBXProject "Radio 360" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B481D9A26814A6700179414;
+			productRefGroup = 1B481DA426814A6700179414 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B481DA226814A6700179414 /* Radio 360 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B481DA126814A6700179414 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B481DB326814A6900179414 /* LaunchScreen.storyboard in Resources */,
+				1BFC42F826814BC300A98E2A /* LoadingView.xib in Resources */,
+				1B481DB026814A6900179414 /* Assets.xcassets in Resources */,
+				1B481DAE26814A6700179414 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B481D9F26814A6700179414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFC42E426814BC300A98E2A /* DesignableImageView.swift in Sources */,
+				1BFC42EE26814BC300A98E2A /* DesignableTextField.swift in Sources */,
+				1BFC42F026814BC300A98E2A /* SpringTextView.swift in Sources */,
+				1BFC42FA26814BC300A98E2A /* DesignableTextView.swift in Sources */,
+				1BFC42F526814BC300A98E2A /* DesignableView.swift in Sources */,
+				1BFC42EF26814BC300A98E2A /* SpringButton.swift in Sources */,
+				1BFC42DF26814BC300A98E2A /* AnimationFrames.swift in Sources */,
+				1BFC42EC26814BC300A98E2A /* SoundPlayer.swift in Sources */,
+				1BFC42E826814BC300A98E2A /* ImageLoader.swift in Sources */,
+				1B481DAB26814A6700179414 /* ViewController.swift in Sources */,
+				1BFC42E726814BC300A98E2A /* TransitionZoom.swift in Sources */,
+				1BFC42E926814BC300A98E2A /* Spring.swift in Sources */,
+				1BFC42F326814BC300A98E2A /* DesignableButton.swift in Sources */,
+				1BFC430026814BC300A98E2A /* AsyncImageView.swift in Sources */,
+				1B481DA726814A6700179414 /* AppDelegate.swift in Sources */,
+				1BFC42FE26814BC300A98E2A /* LoadingView.swift in Sources */,
+				1BFC42F426814BC300A98E2A /* SpringTextField.swift in Sources */,
+				1BFC42E126814BC300A98E2A /* Reachability.swift in Sources */,
+				1BFC42E526814BC300A98E2A /* KeyboardLayoutConstraint.swift in Sources */,
+				1BFC42EA26814BC300A98E2A /* SpringImageView.swift in Sources */,
+				1BFC42EB26814BC300A98E2A /* DesignableLabel.swift in Sources */,
+				1BFC42E626814BC300A98E2A /* TransitionManager.swift in Sources */,
+				1BFC42ED26814BC300A98E2A /* BlurView.swift in Sources */,
+				1BFC42F226814BC300A98E2A /* SpringView.swift in Sources */,
+				1BFC42E026814BC300A98E2A /* Constants.swift in Sources */,
+				1BFC42F626814BC300A98E2A /* DesignableTabBarController.swift in Sources */,
+				1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */,
+				1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */,
+				1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */,
+				1BFC42F726814BC300A98E2A /* AsyncButton.swift in Sources */,
+				1BFC42F126814BC300A98E2A /* Misc.swift in Sources */,
+				1BFC42E226814BC300A98E2A /* FRadioAPI.swift in Sources */,
+				1BFC42E326814BC300A98E2A /* FRadioPlayer.swift in Sources */,
+				1BFC42FC26814BC300A98E2A /* SpringAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1B481DAC26814A6700179414 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B481DAD26814A6700179414 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B481DB126814A6900179414 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B481DB226814A6900179414 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B481DB526814A6900179414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B481DB626814A6900179414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B481DB826814A6900179414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C55DSMVFYQ;
+				INFOPLIST_FILE = "Radio 360/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.radio360.Radio-360";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B481DB926814A6900179414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C55DSMVFYQ;
+				INFOPLIST_FILE = "Radio 360/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.radio360.Radio-360";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B481D9E26814A6700179414 /* Build configuration list for PBXProject "Radio 360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B481DB526814A6900179414 /* Debug */,
+				1B481DB626814A6900179414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B481DB726814A6900179414 /* Build configuration list for PBXNativeTarget "Radio 360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B481DB826814A6900179414 /* Debug */,
+				1B481DB926814A6900179414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B481D9B26814A6700179414 /* Project object */;
+}
