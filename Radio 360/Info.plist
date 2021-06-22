@@ -47,5 +47,10 @@
 	<array>
 		<string>audio</string>
 	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>instagram</string>
+		<string>fb</string>
+	</array>
 </dict>
 </plist>

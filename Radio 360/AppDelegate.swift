@@ -15,11 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         // Make status bar white
-        UINavigationBar.appearance().barStyle = .blackTranslucent
+//        UINavigationBar.appearance().barStyle = .blackTranslucent
         
         // FRadioPlayer config
         FRadioPlayer.shared.isAutoPlay = true

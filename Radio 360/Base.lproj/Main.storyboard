@@ -50,7 +50,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hMb-K4-07e">
-                                <rect key="frame" x="84.5" y="742" width="245" height="50"/>
+                                <rect key="frame" x="52" y="742" width="310" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu2-0w-fYv">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -59,18 +59,47 @@
                                             <constraint firstAttribute="width" secondItem="gu2-0w-fYv" secondAttribute="height" multiplier="1:1" id="tX5-O6-GYw"/>
                                         </constraints>
                                         <state key="normal" image="facebook-logo"/>
+                                        <connections>
+                                            <action selector="didTapFacebook:" destination="ztu-yS-6Ct" eventType="touchUpInside" id="uhv-if-w9f"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-ip-eAN">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-ip-eAN">
                                         <rect key="frame" x="65" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="instagram-logo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapInstagram:" destination="ztu-yS-6Ct" eventType="touchUpInside" id="eiN-pj-kNp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffx-Va-JLl">
+                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="logo-white"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapRadioWeb:" destination="ztu-yS-6Ct" eventType="touchUpInside" id="87e-Dw-TC3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYd-pc-T2J">
-                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="youtube-logo"/>
+                                        <connections>
+                                            <action selector="didTapYoutube:" destination="ztu-yS-6Ct" eventType="touchUpInside" id="czZ-Gp-xnE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdx-PT-xxZ">
-                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="260" y="0.0" width="50" height="50"/>
                                         <state key="normal" image="twitter-logo"/>
+                                        <connections>
+                                            <action selector="didTapTwitter:" destination="ztu-yS-6Ct" eventType="touchUpInside" id="Ovu-r9-hG9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -79,7 +108,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41T-Xb-DkF">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="41T-Xb-DkF" secondAttribute="height" multiplier="1:1" id="tcv-0a-ir7"/>
                                             <constraint firstAttribute="width" constant="45" id="vLc-dA-6hO"/>
@@ -135,12 +164,12 @@
             </objects>
             <point key="canvasLocation" x="1744.9275362318842" y="73.660714285714278"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Dark Mode Aware Navigation Controller-->
         <scene sceneID="1z4-Gl-C79">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fN0-Xv-jbY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fN0-Xv-jbY" customClass="DarkModeAwareNavigationController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="4WK-it-Q6o">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4WK-it-Q6o">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -161,6 +190,7 @@
         <image name="btn-stop" width="44" height="44"/>
         <image name="facebook-logo" width="256" height="256"/>
         <image name="instagram-logo" width="256" height="256"/>
+        <image name="logo-white" width="426.5" height="426.5"/>
         <image name="twitter-logo" width="256" height="256"/>
         <image name="youtube-logo" width="256" height="256"/>
     </resources>

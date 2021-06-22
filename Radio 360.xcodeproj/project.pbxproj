@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B263E8826828AE600F77D81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8726828AE600F77D81 /* Settings.swift */; };
+		1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */; };
 		1B481DA726814A6700179414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DA626814A6700179414 /* AppDelegate.swift */; };
 		1B481DAB26814A6700179414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DAA26814A6700179414 /* ViewController.swift */; };
 		1B481DAE26814A6700179414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DAC26814A6700179414 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B263E8726828AE600F77D81 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeAwareNavigationController.swift; sourceTree = "<group>"; };
 		1B481DA326814A6700179414 /* Radio 360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio 360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B481DA626814A6700179414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B481DAA26814A6700179414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				1B481DAF26814A6900179414 /* Assets.xcassets */,
 				1B481DB126814A6900179414 /* LaunchScreen.storyboard */,
 				1BFC42BA26814BC200A98E2A /* Constants.swift */,
+				1B263E8726828AE600F77D81 /* Settings.swift */,
 				1BFC42BB26814BC200A98E2A /* Libraries */,
 				1BFC42B826814BC200A98E2A /* UI Helpers */,
 				1B481DB426814A6900179414 /* Info.plist */,
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				1BFC42B926814BC200A98E2A /* AnimationFrames.swift */,
+				1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */,
 			);
 			path = "UI Helpers";
 			sourceTree = "<group>";
@@ -274,6 +280,7 @@
 				1BFC42EE26814BC300A98E2A /* DesignableTextField.swift in Sources */,
 				1BFC42F026814BC300A98E2A /* SpringTextView.swift in Sources */,
 				1BFC42FA26814BC300A98E2A /* DesignableTextView.swift in Sources */,
+				1B263E8826828AE600F77D81 /* Settings.swift in Sources */,
 				1BFC42F526814BC300A98E2A /* DesignableView.swift in Sources */,
 				1BFC42EF26814BC300A98E2A /* SpringButton.swift in Sources */,
 				1BFC42DF26814BC300A98E2A /* AnimationFrames.swift in Sources */,
@@ -298,6 +305,7 @@
 				1BFC42F626814BC300A98E2A /* DesignableTabBarController.swift in Sources */,
 				1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */,
 				1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */,
+				1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */,
 				1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */,
 				1BFC42F726814BC300A98E2A /* AsyncButton.swift in Sources */,
 				1BFC42F126814BC300A98E2A /* Misc.swift in Sources */,

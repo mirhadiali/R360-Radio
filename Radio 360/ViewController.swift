@@ -8,6 +8,7 @@
 import UIKit
 import AVKit
 import MediaPlayer
+import SafariServices
 
 class ViewController: UIViewController {
     
@@ -53,6 +54,42 @@ class ViewController: UIViewController {
     
     @IBAction func didTapStop(_ sender: Any) {
         radioPlayer.stop()
+    }
+    
+    @IBAction func didTapFacebook(_ sender: Any) {
+        openURL(link: Constants.facebookHook)
+    }
+    
+    @IBAction func didTapInstagram(_ sender: Any) {
+        openURL(link: Constants.instagramHooks)
+    }
+    
+    @IBAction func didTapRadioWeb(_ sender: Any) {
+        openSafari(link: Constants.website)
+    }
+    
+    @IBAction func didTapYoutube(_ sender: Any) {
+        openURL(link: Constants.youtubeHook)
+    }
+    
+    @IBAction func didTapTwitter(_ sender: Any) {
+        openURL(link: Constants.twitter)
+    }
+    
+    private func openURL(link: String) {
+        let url = URL(string: link)
+        if UIApplication.shared.canOpenURL(url!) {
+            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+        } else {
+            openSafari(link: link)
+        }
+    }
+    
+    private func openSafari(link: String) {
+        let url = URL(string: link)
+        let svc = SFSafariViewController(url: url!)
+        svc.dismissButtonStyle = .done
+        self.present(svc, animated: true, completion: nil)
     }
     
     private func isPlayingDidChange(_ isPlaying: Bool) {
@@ -223,8 +260,3 @@ extension ViewController {
         }
     }
 }
-// AirPlayButton Color
-let globalTintColor = UIColor(red: 0, green: 189/255, blue: 233/255, alpha: 1);
-
-// Set this to "true" to hide the AirPlay button
-let hideAirPlayButton = false
