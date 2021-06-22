@@ -49,28 +49,16 @@ class ViewController: UIViewController {
     
     @IBAction func didTapPlay(_ sender: Any) {
         radioPlayer.togglePlaying()
-//        play()
     }
     
     @IBAction func didTapStop(_ sender: Any) {
         radioPlayer.stop()
-//        pause()
     }
     
     private func isPlayingDidChange(_ isPlaying: Bool) {
         playingButton.isSelected = isPlaying
         startNowPlayingAnimation(isPlaying)
     }
-    
-//    func play() {
-//        player.volume = 1.0
-//        player.rate = 1.0
-//        player.play()
-//    }
-    
-//    func pause() {
-//        player.pause()
-//    }
 }
 
 extension ViewController: FRadioPlayerDelegate {

@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,12 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-s6-Vz4">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5919756208147321" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w13-WD-NvY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5919756208147321" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Hs-eyi" userLabel="AirPlay View" customClass="AirPlayUIView">
                                 <rect key="frame" x="186" y="807" width="42" height="45"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,12 +49,37 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hMb-K4-07e">
+                                <rect key="frame" x="84.5" y="742" width="245" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gu2-0w-fYv">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="DBO-vy-3O3"/>
+                                            <constraint firstAttribute="width" secondItem="gu2-0w-fYv" secondAttribute="height" multiplier="1:1" id="tX5-O6-GYw"/>
+                                        </constraints>
+                                        <state key="normal" image="facebook-logo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vg9-ip-eAN">
+                                        <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="instagram-logo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYd-pc-T2J">
+                                        <rect key="frame" x="130" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="youtube-logo"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdx-PT-xxZ">
+                                        <rect key="frame" x="195" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="twitter-logo"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-0L-hXL">
                                 <rect key="frame" x="157" y="425.5" width="100" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41T-Xb-DkF">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="41T-Xb-DkF" secondAttribute="height" multiplier="1:1" id="tcv-0a-ir7"/>
                                             <constraint firstAttribute="width" constant="45" id="vLc-dA-6hO"/>
@@ -63,7 +92,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owk-1C-vRF">
                                         <rect key="frame" x="55" y="0.0" width="45" height="45"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="btn-stop"/>
                                         <connections>
@@ -76,13 +105,19 @@
                         <viewLayoutGuide key="safeArea" id="sYK-YJ-a7K"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="w13-WD-NvY" firstAttribute="leading" secondItem="VHK-s6-Vz4" secondAttribute="leading" id="1xU-g5-c4f"/>
                             <constraint firstAttribute="bottom" secondItem="VHK-s6-Vz4" secondAttribute="bottom" id="3bJ-i8-054"/>
+                            <constraint firstItem="rAL-Hs-eyi" firstAttribute="top" secondItem="hMb-K4-07e" secondAttribute="bottom" constant="15" id="7Lp-7Q-B5i"/>
                             <constraint firstItem="PkQ-66-9ye" firstAttribute="top" secondItem="A9H-0L-hXL" secondAttribute="bottom" constant="20" id="Cq6-5F-wbX"/>
+                            <constraint firstItem="hMb-K4-07e" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="Fs2-0R-akz"/>
                             <constraint firstItem="A9H-0L-hXL" firstAttribute="centerY" secondItem="zmq-wO-gdy" secondAttribute="centerY" id="GSA-g0-Va6"/>
                             <constraint firstItem="A9H-0L-hXL" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="Kcb-3Q-KMZ"/>
+                            <constraint firstItem="w13-WD-NvY" firstAttribute="top" secondItem="VHK-s6-Vz4" secondAttribute="top" id="Kzs-s8-hM2"/>
                             <constraint firstItem="VHK-s6-Vz4" firstAttribute="top" secondItem="zmq-wO-gdy" secondAttribute="top" id="Lk3-fx-fxZ"/>
+                            <constraint firstItem="w13-WD-NvY" firstAttribute="trailing" secondItem="VHK-s6-Vz4" secondAttribute="trailing" id="Pou-oU-toD"/>
                             <constraint firstItem="sYK-YJ-a7K" firstAttribute="bottom" secondItem="rAL-Hs-eyi" secondAttribute="bottom" constant="10" id="Qbf-HW-SIu"/>
                             <constraint firstItem="rAL-Hs-eyi" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="cjt-WR-PFc"/>
+                            <constraint firstItem="w13-WD-NvY" firstAttribute="bottom" secondItem="VHK-s6-Vz4" secondAttribute="bottom" id="eD8-ce-v37"/>
                             <constraint firstItem="PkQ-66-9ye" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="rTi-hz-sZC"/>
                             <constraint firstItem="VHK-s6-Vz4" firstAttribute="leading" secondItem="sYK-YJ-a7K" secondAttribute="leading" id="reX-hn-8Pa"/>
                             <constraint firstItem="sYK-YJ-a7K" firstAttribute="trailing" secondItem="VHK-s6-Vz4" secondAttribute="trailing" id="vXp-RD-MOv"/>
@@ -124,8 +159,9 @@
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
         <image name="btn-stop" width="44" height="44"/>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="facebook-logo" width="256" height="256"/>
+        <image name="instagram-logo" width="256" height="256"/>
+        <image name="twitter-logo" width="256" height="256"/>
+        <image name="youtube-logo" width="256" height="256"/>
     </resources>
 </document>
