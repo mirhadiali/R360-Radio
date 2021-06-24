@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B263E8826828AE600F77D81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8726828AE600F77D81 /* Settings.swift */; };
 		1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */; };
+		1B263F222682A81B00F77D81 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263F212682A81B00F77D81 /* MenuViewController.swift */; };
 		1B481DA726814A6700179414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DA626814A6700179414 /* AppDelegate.swift */; };
 		1B481DAB26814A6700179414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B481DAA26814A6700179414 /* ViewController.swift */; };
 		1B481DAE26814A6700179414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DAC26814A6700179414 /* Main.storyboard */; };
@@ -47,11 +48,15 @@
 		1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DB26814BC300A98E2A /* UnwindSegue.swift */; };
 		1BFC42FE26814BC300A98E2A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DC26814BC300A98E2A /* LoadingView.swift */; };
 		1BFC430026814BC300A98E2A /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42DE26814BC300A98E2A /* AsyncImageView.swift */; };
+		F89255E6A6823A2BE21D6B96 /* Pods_Radio_360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582372A4C13D2C836B3BCFBD /* Pods_Radio_360.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0119A771051E2F0FCE0AE047 /* Pods-Radio 360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radio 360.release.xcconfig"; path = "Target Support Files/Pods-Radio 360/Pods-Radio 360.release.xcconfig"; sourceTree = "<group>"; };
+		0FD31D7E6932302FC067C5D7 /* Pods-Radio 360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radio 360.debug.xcconfig"; path = "Target Support Files/Pods-Radio 360/Pods-Radio 360.debug.xcconfig"; sourceTree = "<group>"; };
 		1B263E8726828AE600F77D81 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeAwareNavigationController.swift; sourceTree = "<group>"; };
+		1B263F212682A81B00F77D81 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		1B481DA326814A6700179414 /* Radio 360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio 360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B481DA626814A6700179414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B481DAA26814A6700179414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		1BFC42DC26814BC300A98E2A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		1BFC42DD26814BC300A98E2A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BFC42DE26814BC300A98E2A /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		582372A4C13D2C836B3BCFBD /* Pods_Radio_360.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Radio_360.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,17 +107,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89255E6A6823A2BE21D6B96 /* Pods_Radio_360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		157EEE572050A71E6B5F9D28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582372A4C13D2C836B3BCFBD /* Pods_Radio_360.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B481D9A26814A6700179414 = {
 			isa = PBXGroup;
 			children = (
 				1B481DA526814A6700179414 /* Radio 360 */,
 				1B481DA426814A6700179414 /* Products */,
+				4B8951D7D098DD8ACECBC1C1 /* Pods */,
+				157EEE572050A71E6B5F9D28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,7 @@
 			children = (
 				1B481DA626814A6700179414 /* AppDelegate.swift */,
 				1B481DAA26814A6700179414 /* ViewController.swift */,
+				1B263F212682A81B00F77D81 /* MenuViewController.swift */,
 				1B481DAC26814A6700179414 /* Main.storyboard */,
 				1B481DAF26814A6900179414 /* Assets.xcassets */,
 				1B481DB126814A6900179414 /* LaunchScreen.storyboard */,
@@ -205,6 +223,16 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		4B8951D7D098DD8ACECBC1C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FD31D7E6932302FC067C5D7 /* Pods-Radio 360.debug.xcconfig */,
+				0119A771051E2F0FCE0AE047 /* Pods-Radio 360.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B481DB726814A6900179414 /* Build configuration list for PBXNativeTarget "Radio 360" */;
 			buildPhases = (
+				F9D91E64B598C74D51B4CD4C /* [CP] Check Pods Manifest.lock */,
 				1B481D9F26814A6700179414 /* Sources */,
 				1B481DA026814A6700179414 /* Frameworks */,
 				1B481DA126814A6700179414 /* Resources */,
+				F89E150963D5C5EA595C7C33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +301,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F89E150963D5C5EA595C7C33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radio 360/Pods-Radio 360-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radio 360/Pods-Radio 360-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Radio 360/Pods-Radio 360-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D91E64B598C74D51B4CD4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Radio 360-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B481D9F26814A6700179414 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -302,6 +374,7 @@
 				1BFC42ED26814BC300A98E2A /* BlurView.swift in Sources */,
 				1BFC42F226814BC300A98E2A /* SpringView.swift in Sources */,
 				1BFC42E026814BC300A98E2A /* Constants.swift in Sources */,
+				1B263F222682A81B00F77D81 /* MenuViewController.swift in Sources */,
 				1BFC42F626814BC300A98E2A /* DesignableTabBarController.swift in Sources */,
 				1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */,
 				1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */,
@@ -455,6 +528,7 @@
 		};
 		1B481DB826814A6900179414 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD31D7E6932302FC067C5D7 /* Pods-Radio 360.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +549,7 @@
 		};
 		1B481DB926814A6900179414 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0119A771051E2F0FCE0AE047 /* Pods-Radio 360.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

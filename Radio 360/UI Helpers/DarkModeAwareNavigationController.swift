@@ -26,8 +26,8 @@ class DarkModeAwareNavigationController: UINavigationController {
     
     private func updateBarTintColor() {
         if #available(iOS 13.0, *) {
-            self.navigationBar.barStyle = UITraitCollection.current.userInterfaceStyle == .dark ? .blackTranslucent : .default
-            //            self.navigationBar.barTintColor = UITraitCollection.current.userInterfaceStyle == .dark ? .black : .white
+//            self.navigationBar.barStyle = UITraitCollection.current.userInterfaceStyle == .dark ? .blackTranslucent : .default
+//            self.navigationBar.barTintColor = UITraitCollection.current.userInterfaceStyle == .dark ? .black : .white
         }
     }
 }

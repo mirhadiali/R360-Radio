@@ -9,6 +9,7 @@ import UIKit
 import AVKit
 import MediaPlayer
 import SafariServices
+import SideMenu
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
     @IBOutlet weak var artistLabel: UILabel!
+    @IBOutlet weak var headerLabel: SpringLabel!
     @IBOutlet weak var airPlayView: UIView!
     
     var nowPlayingImageView: UIImageView!
@@ -26,7 +28,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        addSideMenu()
+        headerLabel.text = "Your No. 1 Favourite Christian Radio"
+        headerLabel.animation = "flash"
+        headerLabel.animate()
+        
         // Create Now Playing BarItem
         createNowPlayingAnimation()
         
@@ -111,6 +117,31 @@ extension ViewController: FRadioPlayerDelegate {
 // Helper Functions
 extension ViewController {
     
+    func addSideMenu() {
+        let menuBtn = UIBarButtonItem(image: UIImage(named: "icon-hamburger"), style: .done, target: self, action: #selector(self.openMenu))
+        
+        self.navigationItem.leftBarButtonItem = menuBtn
+    }
+    
+    @objc func openMenu() {
+        self.view.endEditing(true)
+        
+        let leftRootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+        
+        leftRootVC.delegate = self
+        
+        let leftMenuNavigationController = SideMenuNavigationController(rootViewController: leftRootVC)
+        leftMenuNavigationController.setNavigationBarHidden(true, animated: false)
+        var setting = SideMenuSettings()
+        setting.menuWidth = self.view.bounds.width * 0.4
+        leftMenuNavigationController.settings = setting
+        leftMenuNavigationController.leftSide = true
+        leftMenuNavigationController.presentationStyle = .menuSlideIn
+        leftMenuNavigationController.isNavigationBarHidden = false
+        leftMenuNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.present(leftMenuNavigationController, animated: true, completion: nil)
+    }
+    
     func playbackStateDidChange(_ playbackState: FRadioPlaybackState, animate: Bool) {
         
         let message: String?
@@ -151,8 +182,8 @@ extension ViewController {
 
         guard let statusMessage = statusMessage else {
             // Radio is (hopefully) streaming properly
-            songLabel.text = "Radio 360"
-            artistLabel.text = "Radio 360 FM"
+            songLabel.text = "Playing ..."
+            artistLabel.text = "R360 Radio"
             shouldAnimateSongLabel(animate)
             return
         }
@@ -163,7 +194,7 @@ extension ViewController {
         guard songLabel.text != statusMessage else { return }
         
         songLabel.text = statusMessage
-        artistLabel.text = "Radio 360 FM 2"
+        artistLabel.text = "R360 Radio"
     
         if animate {
             songLabel.animation = "flash"
@@ -258,5 +289,11 @@ extension ViewController {
             airPlayView.backgroundColor = .clear
             airPlayView.addSubview(airPlayButton)
         }
+    }
+}
+
+extension ViewController: MenuViewControllerDelegate {
+    func didSelect(_ link: String) {
+        openSafari(link: link)
     }
 }

@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         // Make status bar white
-//        UINavigationBar.appearance().barStyle = .blackTranslucent
+        UINavigationBar.appearance().barStyle = .blackTranslucent
         
         // FRadioPlayer config
         FRadioPlayer.shared.isAutoPlay = true

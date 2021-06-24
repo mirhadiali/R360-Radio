@@ -14,4 +14,11 @@ struct Constants {
     static let youtubeHook = "https://www.youtube.com/channel/UCFBXk9CkBUamZt5P_4QxumA"
     static let twitter = "https://twitter.com/R360TV"
     static let website = "https://www.r360radio.co.uk"
+    
+    struct Menu {
+        static let schedule = "https://www.r360radio.co.uk/schedules"
+        static let podcast = "https://www.r360radio.co.uk/podcasts"
+        static let settings = "https://www.r360radio.co.uk/settings"
+        static let contactUs = "https://www.r360radio.co.uk/contact-us"
+    }
 }
