@@ -20,5 +20,8 @@ struct Constants {
         static let podcast = "https://www.r360radio.co.uk/podcasts"
         static let settings = "https://www.r360radio.co.uk/settings"
         static let contactUs = "https://www.r360radio.co.uk/contact-us"
+        static let shop = "https://www.r360radio.co.uk/shop"
+        static let privacyPolicy = "https://www.r360radio.co.uk/privacy-policy"
+        static let catchUp = "https://www.r360radio.co.uk/catch-up"
     }
 }

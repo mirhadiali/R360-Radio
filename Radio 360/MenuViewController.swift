@@ -27,7 +27,10 @@ class MenuViewController: UIViewController {
         ["title_en": "Schedule", "link": Constants.Menu.schedule],
         ["title_en": "Podcast", "link": Constants.Menu.podcast],
         ["title_en": "Settings", "link": Constants.Menu.settings],
-        ["title_en": "Contact Us", "link": Constants.Menu.contactUs]
+        ["title_en": "Contact Us", "link": Constants.Menu.contactUs],
+        ["title_en": "Shop", "link": Constants.Menu.shop],
+        ["title_en": "Privacy Policy", "link": Constants.Menu.privacyPolicy],
+        ["title_en": "Catch Up", "link": Constants.Menu.catchUp]
     ]
     
     override func viewDidLoad() {

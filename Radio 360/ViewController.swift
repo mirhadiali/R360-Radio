@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var headerLabel: SpringLabel!
     @IBOutlet weak var airPlayView: UIView!
+    @IBOutlet weak var backgroundImgView: UIImageView!
     
     var nowPlayingImageView: UIImageView!
     
@@ -29,7 +30,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         addSideMenu()
-        headerLabel.text = "Your No. 1 Favourite Christian Radio"
+        backgroundImgView.image = UIImage(named: "Background-5")
+        headerLabel.text = "Your Number 1 Classic Christian Radio"
         headerLabel.animation = "flash"
         headerLabel.animate()
         
@@ -83,11 +85,12 @@ class ViewController: UIViewController {
     }
     
     private func openURL(link: String) {
-        let url = URL(string: link)
-        if UIApplication.shared.canOpenURL(url!) {
-            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-        } else {
-            openSafari(link: link)
+        if let url = URL(string: link) {
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                openSafari(link: link)
+            }
         }
     }
     
@@ -133,7 +136,7 @@ extension ViewController {
         let leftMenuNavigationController = SideMenuNavigationController(rootViewController: leftRootVC)
         leftMenuNavigationController.setNavigationBarHidden(true, animated: false)
         var setting = SideMenuSettings()
-        setting.menuWidth = self.view.bounds.width * 0.4
+        setting.menuWidth = self.view.bounds.width * 0.45
         leftMenuNavigationController.settings = setting
         leftMenuNavigationController.leftSide = true
         leftMenuNavigationController.presentationStyle = .menuSlideIn
