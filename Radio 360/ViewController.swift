@@ -13,8 +13,6 @@ import SideMenu
 
 class ViewController: UIViewController {
     
-//    var player : AVPlayer!
-    
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -31,7 +29,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         addSideMenu()
         backgroundImgView.image = UIImage(named: "Background-5")
-        headerLabel.text = "Your Number 1 Classic Christian Radio"
+        headerLabel.text = "HeaderLabel".localized
         headerLabel.animation = "flash"
         headerLabel.animate()
         
@@ -151,11 +149,11 @@ extension ViewController {
         
         switch playbackState {
         case .paused:
-            message = "Station Paused..."
+            message = "PauseMessage".localized
         case .playing:
             message = nil
         case .stopped:
-            message = "Station Stopped..."
+            message = "StopMessage".localized
         }
         
         updateLabels(with: message, animate: animate)
@@ -168,14 +166,14 @@ extension ViewController {
         
         switch state {
         case .loading:
-            message = "Loading Station ..."
+            message = "LoadingMessage".localized
         case .urlNotSet:
-            message = "Station URL not valide"
+            message = "URLNotValid".localized
         case .readyToPlay, .loadingFinished:
             playbackStateDidChange(radioPlayer.playbackState, animate: animate)
             return
         case .error:
-            message = "Error Playing"
+            message = "ErrorPlayingMessage".localized
         }
         
         updateLabels(with: message, animate: animate)
@@ -185,8 +183,8 @@ extension ViewController {
 
         guard let statusMessage = statusMessage else {
             // Radio is (hopefully) streaming properly
-            songLabel.text = "Playing ..."
-            artistLabel.text = "R360 Radio"
+            songLabel.text = "PlayingTitle".localized
+            artistLabel.text = "RadioName".localized
             shouldAnimateSongLabel(animate)
             return
         }
@@ -197,7 +195,7 @@ extension ViewController {
         guard songLabel.text != statusMessage else { return }
         
         songLabel.text = statusMessage
-        artistLabel.text = "R360 Radio"
+        artistLabel.text = "RadioName".localized
     
         if animate {
             songLabel.animation = "flash"

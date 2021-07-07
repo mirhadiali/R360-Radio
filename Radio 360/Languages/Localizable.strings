@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Radio 360
+
+  Created by Hadi Ali on 08/07/2021.
+  
+*/
+"HeaderLabel" = "Your Number 1 Classic Christian Radio";
+"RadioName" = "R360 Radio";
+"PlayingTitle" = "Playing ...";
+"PauseMessage" = "Station Paused...";
+"StopMessage" = "Station Stopped...";
+"LoadingMessage" = "Loading Station ...";
+"URLNotValid" = "Station URL not valide";
+"ErrorPlayingMessage" = "R360 Radio will be right back soon.";

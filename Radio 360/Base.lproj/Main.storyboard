@@ -146,7 +146,7 @@
                             <constraint firstItem="rAL-Hs-eyi" firstAttribute="top" secondItem="hMb-K4-07e" secondAttribute="bottom" constant="15" id="7Lp-7Q-B5i"/>
                             <constraint firstItem="PkQ-66-9ye" firstAttribute="top" secondItem="A9H-0L-hXL" secondAttribute="bottom" constant="20" id="Cq6-5F-wbX"/>
                             <constraint firstItem="hMb-K4-07e" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="Fs2-0R-akz"/>
-                            <constraint firstItem="A9H-0L-hXL" firstAttribute="centerY" secondItem="zmq-wO-gdy" secondAttribute="centerY" id="GSA-g0-Va6"/>
+                            <constraint firstItem="A9H-0L-hXL" firstAttribute="centerY" secondItem="zmq-wO-gdy" secondAttribute="centerY" priority="249" id="GSA-g0-Va6"/>
                             <constraint firstItem="Gp4-Qk-5Zj" firstAttribute="leading" secondItem="zmq-wO-gdy" secondAttribute="leading" constant="15" id="JaB-jx-kiM"/>
                             <constraint firstItem="A9H-0L-hXL" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="Kcb-3Q-KMZ"/>
                             <constraint firstItem="w13-WD-NvY" firstAttribute="top" secondItem="VHK-s6-Vz4" secondAttribute="top" id="Kzs-s8-hM2"/>
@@ -159,6 +159,7 @@
                             <constraint firstItem="PkQ-66-9ye" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="rTi-hz-sZC"/>
                             <constraint firstItem="VHK-s6-Vz4" firstAttribute="leading" secondItem="sYK-YJ-a7K" secondAttribute="leading" id="reX-hn-8Pa"/>
                             <constraint firstItem="sYK-YJ-a7K" firstAttribute="trailing" secondItem="VHK-s6-Vz4" secondAttribute="trailing" id="vXp-RD-MOv"/>
+                            <constraint firstItem="hMb-K4-07e" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PkQ-66-9ye" secondAttribute="bottom" constant="15" id="ziP-tK-B9L"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zfk-TC-hbP"/>
