@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var headerLabel: SpringLabel!
     @IBOutlet weak var airPlayView: UIView!
     @IBOutlet weak var backgroundImgView: UIImageView!
+    @IBOutlet weak var imgPlayButton: UIImageView!
+    @IBOutlet weak var imgStopButton: UIImageView!
     
     var nowPlayingImageView: UIImageView!
     
@@ -100,7 +102,8 @@ class ViewController: UIViewController {
     }
     
     private func isPlayingDidChange(_ isPlaying: Bool) {
-        playingButton.isSelected = isPlaying
+        imgPlayButton.image = isPlaying ? UIImage(named: "btn-pause") : UIImage(named: "btn-play")
+//        playingButton.isSelected = isPlaying
         startNowPlayingAnimation(isPlaying)
     }
 }

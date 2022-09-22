@@ -55,7 +55,7 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         cell.backgroundColor = .clear
-        cell.textLabel?.textColor = .black
+        cell.textLabel?.textColor = UIColor.init(named: "labelblack")
         cell.textLabel?.text = controllers[indexPath.row]["title_en"] as? String
         cell.selectionStyle = .none
         return cell
