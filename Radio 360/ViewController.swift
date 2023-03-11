@@ -13,6 +13,13 @@ import SideMenu
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var sliderCollectionView: UICollectionView! {
+        didSet {
+            sliderCollectionView.register(SliderCollectionViewCell.nib, forCellWithReuseIdentifier: SliderCollectionViewCell.id)
+            sliderCollectionView.delegate = self
+            sliderCollectionView.dataSource = self
+        }
+    }
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -21,6 +28,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImgView: UIImageView!
     @IBOutlet weak var imgPlayButton: UIImageView!
     @IBOutlet weak var imgStopButton: UIImageView!
+    
+    var banners: [String] = ["banner1", "banner2", "banner3", "banner4", "banner5", "banner6", "banner7", "banner8"]
+    var counter: Int = 0
+    var timer: Timer?
     
     var nowPlayingImageView: UIImageView!
     
@@ -54,6 +65,27 @@ class ViewController: UIViewController {
         // Setup AirPlayButton
         setupAirPlayButton()
         
+        DispatchQueue.main.async {
+            self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.changeBanner),
+                                              userInfo: nil, repeats: true)
+        }
+    }
+    
+    @objc func changeBanner() {
+        if counter < banners.count {
+            let index = IndexPath.init(item: counter, section: 0)
+            sliderCollectionView.isPagingEnabled = false
+            self.sliderCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            sliderCollectionView.isPagingEnabled = true
+            counter += 1
+            print(counter)
+        } else {
+            counter = 0
+            let index = IndexPath.init(item: counter, section: 0)
+            sliderCollectionView.isPagingEnabled = false
+            self.sliderCollectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            sliderCollectionView.isPagingEnabled = true
+        }
     }
     
     @IBAction func didTapPlay(_ sender: Any) {
@@ -187,7 +219,7 @@ extension ViewController {
         guard let statusMessage = statusMessage else {
             // Radio is (hopefully) streaming properly
             songLabel.text = "PlayingTitle".localized
-            artistLabel.text = "RadioName".localized
+            artistLabel.text = "RadioEmail".localized
             shouldAnimateSongLabel(animate)
             return
         }
@@ -198,7 +230,7 @@ extension ViewController {
         guard songLabel.text != statusMessage else { return }
         
         songLabel.text = statusMessage
-        artistLabel.text = "RadioName".localized
+        artistLabel.text = "RadioEmail".localized
     
         if animate {
             songLabel.animation = "flash"
@@ -299,5 +331,33 @@ extension ViewController {
 extension ViewController: MenuViewControllerDelegate {
     func didSelect(_ link: String) {
         openSafari(link: link)
+    }
+}
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return banners.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: SliderCollectionViewCell.id, for: indexPath
+        ) as? SliderCollectionViewCell else {
+            fatalError()
+        }
+        cell.widthConstraint.constant = self.sliderCollectionView.frame.width
+        cell.heightConstraint.constant = self.sliderCollectionView.frame.height
+        cell.bindCell(image: banners[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: self.sliderCollectionView.frame.width,
+                      height: self.sliderCollectionView.frame.height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.zero
     }
 }

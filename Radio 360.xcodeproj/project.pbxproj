@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA7382329BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA7382129BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift */; };
+		0FA7382429BCDB2A00DC9DD7 /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FA7382229BCDB2A00DC9DD7 /* SliderCollectionViewCell.xib */; };
 		1B263E8826828AE600F77D81 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8726828AE600F77D81 /* Settings.swift */; };
 		1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */; };
 		1B263F222682A81B00F77D81 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B263F212682A81B00F77D81 /* MenuViewController.swift */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0119A771051E2F0FCE0AE047 /* Pods-Radio 360.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radio 360.release.xcconfig"; path = "Target Support Files/Pods-Radio 360/Pods-Radio 360.release.xcconfig"; sourceTree = "<group>"; };
+		0FA7382129BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		0FA7382229BCDB2A00DC9DD7 /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
 		0FD31D7E6932302FC067C5D7 /* Pods-Radio 360.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radio 360.debug.xcconfig"; path = "Target Support Files/Pods-Radio 360/Pods-Radio 360.debug.xcconfig"; sourceTree = "<group>"; };
 		1B263E8726828AE600F77D81 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		1B263E8B26828C4B00F77D81 /* DarkModeAwareNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeAwareNavigationController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 				1B8C07692696410800A8FFF3 /* Extensions */,
 				1B8C076D2696413400A8FFF3 /* Languages */,
 				1B481DB426814A6900179414 /* Info.plist */,
+				0FA7382129BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift */,
+				0FA7382229BCDB2A00DC9DD7 /* SliderCollectionViewCell.xib */,
 			);
 			path = "Radio 360";
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				1BFC42F826814BC300A98E2A /* LoadingView.xib in Resources */,
 				1B481DB026814A6900179414 /* Assets.xcassets in Resources */,
 				1B481DAE26814A6700179414 /* Main.storyboard in Resources */,
+				0FA7382429BCDB2A00DC9DD7 /* SliderCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +407,7 @@
 				1BFC42F626814BC300A98E2A /* DesignableTabBarController.swift in Sources */,
 				1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */,
 				1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */,
+				0FA7382329BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift in Sources */,
 				1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */,
 				1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */,
 				1B8C076B2696411C00A8FFF3 /* String+Extensions.swift in Sources */,
