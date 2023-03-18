@@ -18,7 +18,7 @@ class SliderCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imageView.contentMode = .scaleAspectFit
+        imageView.contentMode = .scaleToFill
     }
     
     override func prepareForReuse() {

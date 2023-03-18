@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,13 +22,14 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner2" translatesAutoresizingMaskIntoConstraints="NO" id="qK6-yV-c1n">
                                 <rect key="frame" x="0.0" y="0.0" width="670" height="337"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="670" id="RMY-3t-e2K"/>
                                     <constraint firstAttribute="height" constant="337" id="fXq-lj-UUM"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="qK6-yV-c1n" firstAttribute="top" secondItem="TlW-wg-G5f" secondAttribute="top" id="1Hx-OI-sTm"/>
                             <constraint firstItem="qK6-yV-c1n" firstAttribute="leading" secondItem="TlW-wg-G5f" secondAttribute="leading" id="WLG-Wy-y8Y"/>
@@ -57,8 +57,5 @@
     </objects>
     <resources>
         <image name="banner2" width="3024" height="2219"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

@@ -12,8 +12,12 @@ struct Constants {
     static let facebookHook = "fb://profile/2044850612251819"
     static let instagramHooks = "https://www.instagram.com/r360radio"
     static let youtubeHook = "https://www.youtube.com/channel/UCFBXk9CkBUamZt5P_4QxumA"
+    static let tiktok = "https://www.tiktok.com/@r360radio"
     static let twitter = "https://twitter.com/R360TV"
     static let website = "https://www.r360radio.co.uk"
+    static let livePlaylist = "https://www.r360radio.co.uk/live-playlist/"
+    static let podcasts = "https://www.r360radio.co.uk/podcasts/"
+    static let recentlyPlay = "https://www.r360radio.co.uk/recently-play/"
     
     struct Menu {
         static let schedule = "https://www.r360radio.co.uk/schedules"

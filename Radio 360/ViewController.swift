@@ -20,6 +20,7 @@ class ViewController: UIViewController {
             sliderCollectionView.dataSource = self
         }
     }
+    @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
     @IBOutlet weak var artistLabel: UILabel!
@@ -27,13 +28,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var airPlayView: UIView!
     @IBOutlet weak var backgroundImgView: UIImageView!
     @IBOutlet weak var imgPlayButton: UIImageView!
+    @IBOutlet weak var imgPlayButton2: UIImageView!
     @IBOutlet weak var imgStopButton: UIImageView!
     
+    @IBOutlet weak var nowPlayingImageView: UIImageView!
     var banners: [String] = ["banner1", "banner2", "banner3", "banner4", "banner5", "banner6", "banner7", "banner8"]
     var counter: Int = 0
     var timer: Timer?
     
-    var nowPlayingImageView: UIImageView!
+//    var nowPlayingImageView: UIImageView!
     
     var radioPlayer = FRadioPlayer.shared
     
@@ -45,7 +48,7 @@ class ViewController: UIViewController {
         headerLabel.text = "HeaderLabel".localized
         headerLabel.animation = "flash"
         headerLabel.animate()
-        
+        navigationController?.navigationBar.isHidden = true
         // Create Now Playing BarItem
         createNowPlayingAnimation()
         
@@ -69,6 +72,11 @@ class ViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.changeBanner),
                                               userInfo: nil, repeats: true)
         }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        logoImage.layer.cornerRadius = logoImage.frame.height / 2
     }
     
     @objc func changeBanner() {
@@ -104,6 +112,10 @@ class ViewController: UIViewController {
         openURL(link: Constants.instagramHooks)
     }
     
+    @IBAction func didTapTikTok(_ sender: Any) {
+        openURL(link: Constants.tiktok)
+    }
+    
     @IBAction func didTapRadioWeb(_ sender: Any) {
         openSafari(link: Constants.website)
     }
@@ -114,6 +126,19 @@ class ViewController: UIViewController {
     
     @IBAction func didTapTwitter(_ sender: Any) {
         openURL(link: Constants.twitter)
+    }
+    
+    @IBAction func didTapMenu(_ sender: Any) {
+        openMenu()
+    }
+    @IBAction func didTapPodcast(_ sender: Any) {
+        openURL(link: Constants.podcasts)
+    }
+    @IBAction func didTapLivePlaylist(_ sender: Any) {
+        openURL(link: Constants.livePlaylist)
+    }
+    @IBAction func didTapRecentlyPlayed(_ sender: Any) {
+        openURL(link: Constants.recentlyPlay)
     }
     
     private func openURL(link: String) {
@@ -135,6 +160,7 @@ class ViewController: UIViewController {
     
     private func isPlayingDidChange(_ isPlaying: Bool) {
         imgPlayButton.image = isPlaying ? UIImage(named: "btn-pause") : UIImage(named: "btn-play")
+        imgPlayButton2.image = isPlaying ? UIImage(named: "btn-pause") : UIImage(named: "btn-play")
 //        playingButton.isSelected = isPlaying
         startNowPlayingAnimation(isPlaying)
     }
@@ -173,7 +199,7 @@ extension ViewController {
         leftMenuNavigationController.settings = setting
         leftMenuNavigationController.leftSide = true
         leftMenuNavigationController.presentationStyle = .menuSlideIn
-        leftMenuNavigationController.isNavigationBarHidden = false
+        leftMenuNavigationController.isNavigationBarHidden = true
         leftMenuNavigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.present(leftMenuNavigationController, animated: true, completion: nil)
     }
@@ -255,7 +281,7 @@ extension ViewController {
     func createNowPlayingAnimation() {
         
         // Setup ImageView
-        nowPlayingImageView = UIImageView(image: UIImage(named: "NowPlayingBars-3"))
+        nowPlayingImageView.image = UIImage(named: "NowPlayingBars-3")
         nowPlayingImageView.autoresizingMask = []
         nowPlayingImageView.contentMode = UIView.ContentMode.center
         
@@ -263,14 +289,14 @@ extension ViewController {
         nowPlayingImageView.animationImages = AnimationFrames.createFrames()
         nowPlayingImageView.animationDuration = 0.7
         
-        // Create Top BarButton
-        let barButton = UIButton(type: .custom)
-        barButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
-        barButton.addSubview(nowPlayingImageView)
-        nowPlayingImageView.center = barButton.center
-        
-        let barItem = UIBarButtonItem(customView: barButton)
-        self.navigationItem.rightBarButtonItem = barItem
+//        // Create Top BarButton
+//        let barButton = UIButton(type: .custom)
+//        barButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+//        barButton.addSubview(nowPlayingImageView)
+//        nowPlayingImageView.center = barButton.center
+//
+//        let barItem = UIBarButtonItem(customView: barButton)
+//        self.navigationItem.rightBarButtonItem = barItem
     }
     
     func startNowPlayingAnimation(_ animate: Bool) {
