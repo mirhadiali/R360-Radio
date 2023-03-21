@@ -19,6 +19,7 @@
 		1B481DB326814A6900179414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B481DB126814A6900179414 /* LaunchScreen.storyboard */; };
 		1B8C076B2696411C00A8FFF3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8C076A2696411C00A8FFF3 /* String+Extensions.swift */; };
 		1B8C07702696418A00A8FFF3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1B8C076F2696418A00A8FFF3 /* Localizable.strings */; };
+		1BB7916E29CA395C0078BDF9 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7916D29CA395C0078BDF9 /* LaunchViewController.swift */; };
 		1BFC42DF26814BC300A98E2A /* AnimationFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42B926814BC200A98E2A /* AnimationFrames.swift */; };
 		1BFC42E026814BC300A98E2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BA26814BC200A98E2A /* Constants.swift */; };
 		1BFC42E126814BC300A98E2A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFC42BD26814BC200A98E2A /* Reachability.swift */; };
@@ -72,6 +73,7 @@
 		1B481DB426814A6900179414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B8C076A2696411C00A8FFF3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1B8C076F2696418A00A8FFF3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1BB7916D29CA395C0078BDF9 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		1BFC42B926814BC200A98E2A /* AnimationFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFrames.swift; sourceTree = "<group>"; };
 		1BFC42BA26814BC200A98E2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1BFC42BD26814BC200A98E2A /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				1B481DA626814A6700179414 /* AppDelegate.swift */,
 				1B481DAA26814A6700179414 /* ViewController.swift */,
 				1B263F212682A81B00F77D81 /* MenuViewController.swift */,
+				1BB7916D29CA395C0078BDF9 /* LaunchViewController.swift */,
 				1B481DAC26814A6700179414 /* Main.storyboard */,
 				1B481DAF26814A6900179414 /* Assets.xcassets */,
 				1B481DB126814A6900179414 /* LaunchScreen.storyboard */,
@@ -408,6 +411,7 @@
 				1BFC42FB26814BC300A98E2A /* AutoTextView.swift in Sources */,
 				1BFC42F926814BC300A98E2A /* SpringLabel.swift in Sources */,
 				0FA7382329BCDB2A00DC9DD7 /* SliderCollectionViewCell.swift in Sources */,
+				1BB7916E29CA395C0078BDF9 /* LaunchViewController.swift in Sources */,
 				1B263E8C26828C4B00F77D81 /* DarkModeAwareNavigationController.swift in Sources */,
 				1BFC42FD26814BC300A98E2A /* UnwindSegue.swift in Sources */,
 				1B8C076B2696411C00A8FFF3 /* String+Extensions.swift in Sources */,

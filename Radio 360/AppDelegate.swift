@@ -25,10 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FRadioPlayer.shared.enableArtwork = true
         FRadioPlayer.shared.artworkSize = 600
         
-        if let navigationController = window?.rootViewController as? UINavigationController {
-            viewController = navigationController.viewControllers.first as? ViewController
-        }
-        
         return true
     }
 

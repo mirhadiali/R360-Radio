@@ -11,4 +11,4 @@ import UIKit
 let globalTintColor = UIColor(red: 0, green: 189/255, blue: 233/255, alpha: 1);
 
 // Set this to "true" to hide the AirPlay button
-let hideAirPlayButton = false
+let hideAirPlayButton = true

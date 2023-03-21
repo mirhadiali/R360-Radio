@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fN0-Xv-jbY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="asj-M0-GAt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="2VY-vC-kSt">
             <objects>
-                <viewController id="ztu-yS-6Ct" customClass="ViewController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="ztu-yS-6Ct" customClass="ViewController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zmq-wO-gdy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-5" translatesAutoresizingMaskIntoConstraints="NO" id="VHK-s6-Vz4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="826.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.5919756208147321" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w13-WD-NvY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="826.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.5919756208147321" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Odl-sm-epv">
-                                <rect key="frame" x="0.0" y="92" width="414" height="248"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="269"/>
                                 <color key="backgroundColor" white="1" alpha="0.5047611573926446" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Odl-sm-epv" secondAttribute="height" multiplier="432 : 317" id="XOy-KB-rtH"/>
@@ -39,7 +40,7 @@
                                 <cells/>
                             </collectionView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="kPu-lz-AO0">
-                                <rect key="frame" x="157" y="355" width="100" height="100"/>
+                                <rect key="frame" x="157" y="372" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="IAt-fX-WaF"/>
                                     <constraint firstAttribute="width" secondItem="kPu-lz-AO0" secondAttribute="height" multiplier="1:1" id="dij-cv-G8p"/>
@@ -51,13 +52,13 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Number 1 Classic Christian Radio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gp4-Qk-5Zj" userLabel="Song Label" customClass="SpringLabel" customModule="Radio_360" customModuleProvider="target">
-                                <rect key="frame" x="15" y="470" width="384" height="33.5"/>
+                                <rect key="frame" x="15" y="487" width="384" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="A9H-0L-hXL">
-                                <rect key="frame" x="177" y="513.5" width="60" height="60"/>
+                                <rect key="frame" x="177" y="527" width="60" height="60"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3L-xX-g3v">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -117,10 +118,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PkQ-66-9ye" userLabel="Labels Stack View">
-                                <rect key="frame" x="207" y="583.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="597" width="0.0" height="0.0"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Ac-2I-QVJ" userLabel="Song Label" customClass="SpringLabel" customModule="Radio_360" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="0.0"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -128,7 +129,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dhn-Pu-1Jm">
-                                <rect key="frame" x="52" y="593.5" width="310" height="189"/>
+                                <rect key="frame" x="52" y="666.5" width="310" height="185.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hMb-K4-07e">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="50"/>
@@ -297,13 +298,13 @@ played</string>
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cHr-zR-wa9" userLabel="Artist Label">
-                                        <rect key="frame" x="0.0" y="110" width="310" height="24"/>
+                                        <rect key="frame" x="0.0" y="110" width="310" height="20.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7c-XT-pZE">
-                                        <rect key="frame" x="0.0" y="139" width="310" height="50"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="310" height="50"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-black" translatesAutoresizingMaskIntoConstraints="NO" id="RJa-MK-e7F">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -318,11 +319,19 @@ played</string>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-Ch-PTY">
-                                                <rect key="frame" x="60" y="14" width="49.5" height="21.5"/>
+                                                <rect key="frame" x="60" y="14.5" width="49.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Hs-eyi" userLabel="AirPlay View" customClass="AirPlayUIView">
+                                                <rect key="frame" x="213" y="2.5" width="42" height="45"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="GbN-7Z-8T8"/>
+                                                    <constraint firstAttribute="width" constant="42" id="huC-U5-1ZG"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJo-x5-B48">
                                                 <rect key="frame" x="265" y="2.5" width="45" height="45"/>
                                                 <subviews>
@@ -354,8 +363,10 @@ played</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
+                                            <constraint firstItem="rAL-Hs-eyi" firstAttribute="centerY" secondItem="N7c-XT-pZE" secondAttribute="centerY" id="5dI-bS-pLD"/>
                                             <constraint firstItem="hWV-Ch-PTY" firstAttribute="leading" secondItem="RJa-MK-e7F" secondAttribute="trailing" constant="10" id="BTn-hF-jVm"/>
                                             <constraint firstItem="RJa-MK-e7F" firstAttribute="top" secondItem="N7c-XT-pZE" secondAttribute="top" id="Ks5-Ms-ZfB"/>
+                                            <constraint firstItem="yJo-x5-B48" firstAttribute="leading" secondItem="rAL-Hs-eyi" secondAttribute="trailing" constant="10" id="Lhl-T0-3L6"/>
                                             <constraint firstAttribute="trailing" secondItem="yJo-x5-B48" secondAttribute="trailing" id="a1q-PL-l8u"/>
                                             <constraint firstItem="RJa-MK-e7F" firstAttribute="leading" secondItem="N7c-XT-pZE" secondAttribute="leading" id="ppE-e6-X7e"/>
                                             <constraint firstItem="hWV-Ch-PTY" firstAttribute="centerY" secondItem="N7c-XT-pZE" secondAttribute="centerY" id="ubK-Ty-awT"/>
@@ -366,14 +377,6 @@ played</string>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAL-Hs-eyi" userLabel="AirPlay View" customClass="AirPlayUIView">
-                                <rect key="frame" x="186" y="807" width="42" height="45"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="GbN-7Z-8T8"/>
-                                    <constraint firstAttribute="width" constant="42" id="huC-U5-1ZG"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sYK-YJ-a7K"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -392,7 +395,6 @@ played</string>
                             <constraint firstItem="A9H-0L-hXL" firstAttribute="top" secondItem="Gp4-Qk-5Zj" secondAttribute="bottom" constant="10" id="PQk-lq-qsl"/>
                             <constraint firstItem="w13-WD-NvY" firstAttribute="trailing" secondItem="VHK-s6-Vz4" secondAttribute="trailing" id="Pou-oU-toD"/>
                             <constraint firstItem="Odl-sm-epv" firstAttribute="trailing" secondItem="sYK-YJ-a7K" secondAttribute="trailing" id="a4U-Zc-kY7"/>
-                            <constraint firstItem="rAL-Hs-eyi" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="cjt-WR-PFc"/>
                             <constraint firstItem="w13-WD-NvY" firstAttribute="bottom" secondItem="VHK-s6-Vz4" secondAttribute="bottom" id="eD8-ce-v37"/>
                             <constraint firstItem="Gp4-Qk-5Zj" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="fV2-cR-b6E"/>
                             <constraint firstItem="kPu-lz-AO0" firstAttribute="centerX" secondItem="zmq-wO-gdy" secondAttribute="centerX" id="i4q-dD-qrC"/>
@@ -435,7 +437,7 @@ played</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qho-9A-kp6">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -458,13 +460,39 @@ played</string>
             </objects>
             <point key="canvasLocation" x="2434" y="82"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="Rnk-fc-p3J">
+            <objects>
+                <viewController storyboardIdentifier="LaunchViewController" id="asj-M0-GAt" customClass="LaunchViewController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cfu-9j-Uf3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="snc-z1-WgA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kxx-UQ-UGa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kxx-UQ-UGa" firstAttribute="trailing" secondItem="snc-z1-WgA" secondAttribute="trailing" id="G8i-SS-uNN"/>
+                            <constraint firstItem="snc-z1-WgA" firstAttribute="top" secondItem="cfu-9j-Uf3" secondAttribute="top" id="aet-Nx-29h"/>
+                            <constraint firstAttribute="bottom" secondItem="snc-z1-WgA" secondAttribute="bottom" id="fD7-az-lxd"/>
+                            <constraint firstItem="snc-z1-WgA" firstAttribute="leading" secondItem="Kxx-UQ-UGa" secondAttribute="leading" id="kQR-IX-v8a"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKd-6s-vS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="72"/>
+        </scene>
         <!--Dark Mode Aware Navigation Controller-->
         <scene sceneID="1z4-Gl-C79">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fN0-Xv-jbY" customClass="DarkModeAwareNavigationController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DarkModeAwareNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="fN0-Xv-jbY" customClass="DarkModeAwareNavigationController" customModule="Radio_360" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4WK-it-Q6o">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -485,10 +513,14 @@ played</string>
         <image name="facebook-logo" width="256" height="256"/>
         <image name="icon-hamburger" width="22" height="16"/>
         <image name="instagram-logo" width="256" height="256"/>
+        <image name="launch" width="1080" height="1920"/>
         <image name="logo-black" width="426.5" height="426.5"/>
         <image name="logo-white" width="426.5" height="426.5"/>
         <image name="tik-tok" width="256" height="256"/>
         <image name="twitter-logo" width="256" height="256"/>
         <image name="youtube-logo" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
