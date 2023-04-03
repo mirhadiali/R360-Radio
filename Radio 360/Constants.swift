@@ -9,9 +9,9 @@ import Foundation
 
 struct Constants {
     static let streamURL = "https://s14.myradiostream.com/29856/listen.mp3"
-    static let facebookHook = "fb://profile/2044850612251819"
+    static let facebookHook = "https://www.facebook.com/R360radio/"
     static let instagramHooks = "https://www.instagram.com/r360radio"
-    static let youtubeHook = "https://www.youtube.com/channel/UCFBXk9CkBUamZt5P_4QxumA"
+    static let youtubeHook = "https://www.youtube.com/@user-iw6fr2ci5p/streams"
     static let tiktok = "https://www.tiktok.com/@r360radio"
     static let twitter = "https://twitter.com/R360TV"
     static let website = "https://www.r360radio.co.uk"
